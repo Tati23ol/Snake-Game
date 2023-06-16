@@ -1,0 +1,65 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+}
+
+#game-board{
+  background-color:rgb(104, 114, 136);
+  height: 900px;
+  width: 1000px;
+
+  display: grid;
+  grid-template-columns: repeat(21, 1fr);
+  grid-template-rows: repeat(21, 1fr);
+}
+
+.comida{
+  border-radius: 50%;
+  background-color: rgb(196, 8, 8);
+}
+
+.cabeca{
+  border-radius: 2px;
+  background-color: rgb(44, 20, 150);
+  z-index: 6;
+}
+.corpo{
+  background-color: #2a51bd;
+  z-index: 1;
+}
+.scoreAlto{
+  font-size: 80px;
+  align-items: center;
+  text-align: center;
+  padding: 5px;
+  height: 100px;
+  width: 100px;
+  background-color: aliceblue;
+}
+
+.scoreAtual{
+  font-size: 80px;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  width: 100px;
+  background-color: #2a51bd;
+}
+
+
+.titulo{
+  padding: 10px;
+  color: white;
+}
+
